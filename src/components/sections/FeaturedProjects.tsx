@@ -49,61 +49,40 @@ export function FeaturedProjects() {
         >
           {portfolioData.projects.map((project, index) => (
             <motion.div key={index} variants={itemVariants} className="h-full flex">
-              <Card className="flex flex-col h-full bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 overflow-hidden group">
-                <CardHeader className="space-y-2">
+              <Card className="flex flex-col h-full bg-card/40 backdrop-blur-md border-border/50 hover:border-primary/50 hover:shadow-[0_0_30px_-15px_rgba(124,58,237,0.3)] transition-all duration-500 overflow-hidden group min-h-[350px] relative">
+                
+                {/* Decorative background gradient */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+
+                <CardHeader className="space-y-3 pb-4 pt-8 px-6 md:px-8 z-10">
                   <div className="flex justify-between items-start gap-4">
                     <div>
-                      <CardTitle className="text-2xl font-bold group-hover:text-primary transition-colors">
+                      <CardTitle className="text-2xl md:text-3xl font-bold group-hover:text-primary transition-colors duration-300">
                         {project.title}
                       </CardTitle>
-                      <CardDescription className="text-primary font-medium mt-1">
+                      <CardDescription className="text-primary/90 font-medium mt-2 text-sm md:text-base">
                         {project.subtitle}
                       </CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 
-                <CardContent className="flex-1 space-y-4">
-                  <p className="text-muted-foreground">
+                <CardContent className="flex-1 flex flex-col space-y-6 px-6 md:px-8 z-10">
+                  <p className="text-muted-foreground/90 leading-relaxed text-base mt-2 mb-auto">
                     {project.description}
                   </p>
-                  
-                  <div className="space-y-2">
-                    <h4 className="text-sm font-semibold text-foreground">Key Features:</h4>
-                    <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                      {project.features.slice(0, 4).map((feature, idx) => (
-                        <li key={idx}>{feature}</li>
-                      ))}
-                      {project.features.length > 4 && <li>And more...</li>}
-                    </ul>
-                  </div>
-
-                  <div className="space-y-2">
-                    <h4 className="text-sm font-semibold text-foreground">Impact:</h4>
-                    <p className="text-sm text-muted-foreground italic border-l-2 border-primary/50 pl-3">
-                      {project.impact}
-                    </p>
-                  </div>
-
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    {project.technologies.map((tech, idx) => (
-                      <Badge key={idx} variant="outline" className="bg-accent/50 text-xs">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
                 </CardContent>
 
-                <CardFooter className="pt-4 border-t border-border/50 gap-4">
+                <CardFooter className="pt-6 pb-8 px-6 md:px-8 border-t border-border/10 gap-4 mt-auto z-10">
                   {project.github !== "#" && (
-                    <Link href={project.github} target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "flex-1 gap-2")}>
-                      <Github className="w-4 h-4" />
+                    <Link href={project.github} target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline" }), "flex-1 gap-2 bg-background/50 hover:bg-background border-border/50 transition-all duration-300 py-6 text-base")}>
+                      <Github className="w-5 h-5" />
                       Code
                     </Link>
                   )}
                   {project.live !== "#" && (
-                    <Link href={project.live} target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ size: "sm" }), "flex-1 gap-2 bg-primary text-primary-foreground hover:bg-primary/90")}>
-                      <ExternalLink className="w-4 h-4" />
+                    <Link href={project.live} target="_blank" rel="noopener noreferrer" className={cn(buttonVariants(), "flex-1 gap-2 bg-primary text-primary-foreground hover:bg-primary/90 shadow-md hover:shadow-primary/25 transition-all duration-300 py-6 text-base")}>
+                      <ExternalLink className="w-5 h-5" />
                       Live Demo
                     </Link>
                   )}

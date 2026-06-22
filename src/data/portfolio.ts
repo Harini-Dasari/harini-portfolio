@@ -55,7 +55,7 @@ export const portfolioData = {
     {
       title: "LifeBand Maa",
       subtitle: "AI-Based Maternal Health Monitoring System",
-      description: "I developed an AI-powered maternal healthcare platform that monitors vital signs of pregnant women in real time.",
+      description: "A wearable AI solution that keeps pregnant women safe by continuously monitoring vital signs like blood pressure and ECG. It uses anomaly detection to instantly alert doctors and families to potential health risks through a remote live dashboard.",
       features: [
         "BP Monitoring",
         "ECG Monitoring",
@@ -72,7 +72,7 @@ export const portfolioData = {
     {
       title: "AI for Rural Health",
       subtitle: "Healthcare Risk Prediction Platform",
-      description: "I built an AI-powered healthcare platform that analyzes symptoms and predicts health risks.",
+      description: "An intelligent platform designed to bridge the healthcare gap in rural communities by connecting patients with doctors through ASHA workers. It analyzes symptoms to predict health severity and recommends the best course of action, from self-care to hospital visits.",
       features: [
         "Symptom Analysis",
         "Risk Prediction",
@@ -88,7 +88,7 @@ export const portfolioData = {
     {
       title: "Praja FIR",
       subtitle: "Voice-Based Digital FIR Filing System",
-      description: "I developed a multilingual AI-powered system for filing FIRs using voice input.",
+      description: "A multilingual AI platform that revolutionizes how police complaints are filed by allowing users to submit FIRs simply using their voice. It uses speech recognition and NLP to convert spoken words in native languages into structured, translated digital documents for seamless verification and sharing across states.",
       features: [
         "Speech Recognition",
         "NLP Processing",
@@ -104,7 +104,7 @@ export const portfolioData = {
     {
       title: "Safe Yathra",
       subtitle: "AI-Based Route Safety Analysis System",
-      description: "I built a machine learning system that predicts route safety and assists travelers.",
+      description: "A smart travel companion that visualizes route safety levels directly on a map using machine learning. It classifies areas into safe, moderate, or unsafe zones based on location data, and highlights essential nearby services like hospitals and police stations to ensure peace of mind during travel.",
       features: [
         "Route Classification",
         "Safety Prediction",
@@ -120,13 +120,42 @@ export const portfolioData = {
     }
   ],
   achievements: [
-    "Qualified GATE 2026 (Computer Science and Engineering)",
-    "Won First Prize at Police Hackathon for Praja FIR",
-    "Presented LifeBand Maa at PitchTank",
-    "Presented LifeBand Maa at Blueprint 6.0",
-    "Presented LifeBand Maa at Techzite 2.0",
-    "Won Aadhya Hackathon 2K26 among 60+ teams",
-    "Secured Top 10 position at Everest Engineering Hackathon among 100+ teams"
+    {
+      icon: "🏆",
+      title: "GATE 2026",
+      description: "Qualified GATE in Computer Science & Engineering.",
+      year: "2026"
+    },
+    {
+      icon: "🥇",
+      title: "Police Hackathon Winner",
+      description: "Won First Prize for Praja FIR.",
+      year: "2026"
+    },
+    {
+      icon: "🚀",
+      title: "PitchTank Showcase",
+      description: "Presented LifeBand Maa.",
+      year: "2026"
+    },
+    {
+      icon: "⭐",
+      title: "Blueprint 6.0",
+      description: "Showcased healthcare innovation.",
+      year: "2026"
+    },
+    {
+      icon: "🏅",
+      title: "Techzite 2.0 Winner",
+      description: "Recognized for AI-based solutions.",
+      year: "2026"
+    },
+    {
+      icon: "🎯",
+      title: "Everest Engineering Top 10",
+      description: "Top 10 among 100+ teams.",
+      year: "2026"
+    }
   ],
   research: [
     "Computer Vision",
