@@ -9,7 +9,6 @@ import { Education } from "@/components/sections/Education";
 import { Skills } from "@/components/sections/Skills";
 import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
 import { Achievements } from "@/components/sections/Achievements";
-import { GithubSection } from "@/components/sections/GithubSection";
 import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
@@ -32,7 +31,6 @@ export default function Home() {
         <Skills />
         <FeaturedProjects />
         <Achievements />
-        <GithubSection />
         <Contact />
       </main>
 

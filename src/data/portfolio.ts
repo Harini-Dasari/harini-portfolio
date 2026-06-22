@@ -35,7 +35,7 @@ export const portfolioData = {
     "Programming Languages": ["Python", "Java", "JavaScript", "C"],
     "Frontend Development": ["React.js", "Next.js", "HTML", "CSS", "Tailwind CSS"],
     "Backend Development": ["Node.js", "Express.js"],
-    "Databases & Cloud": ["MongoDB", "MySQL", "Supabase", "Firebase", "Vercel", "Render"],
+    "Databases & Cloud": ["MongoDB", "MySQL", "Firebase", "Vercel", "Render"],
     "AI & Machine Learning": [
       "Machine Learning",
       "Deep Learning",

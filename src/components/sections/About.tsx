@@ -175,25 +175,7 @@ export function About() {
           </div>
         </motion.div>
 
-        {/* ACHIEVEMENT STRIP */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
-          className="flex flex-wrap items-center justify-center gap-3 md:gap-4 mt-8 md:mt-12"
-        >
-          {[
-            { text: "Police Hackathon Winner" },
-            { text: "Top 10 Everest Engineering Hackathon" },
-            { text: "LifeBand Maa Presented at PitchTank" },
-            { text: "GATE 2026 Qualified" }
-          ].map((pill, i) => (
-            <div key={i} className="inline-flex items-center justify-center px-6 py-2.5 rounded-full border border-white/10 bg-[#0F172A]/80 backdrop-blur-md shadow-lg hover:bg-white/[0.05] hover:-translate-y-1 transition-all duration-300">
-              <span className="text-white text-xs md:text-sm font-medium tracking-wide">{pill.text}</span>
-            </div>
-          ))}
-        </motion.div>
+
 
       </div>
     </section>

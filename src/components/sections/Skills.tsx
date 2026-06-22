@@ -13,7 +13,7 @@ export function Skills() {
       title: "Web Dev",
       fullTitle: "Web Development",
       desc: "Building modern, scalable web applications.",
-      techs: ["React.js", "Node.js", "Express.js", "Supabase"],
+      techs: ["MongoDB", "Express.js", "React.js", "Node.js"],
       color: "from-[#38BDF8]/40 to-[#38BDF8]/5", 
       border: "border-[#38BDF8]/30",
     },

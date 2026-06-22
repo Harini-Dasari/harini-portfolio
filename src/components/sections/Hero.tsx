@@ -175,7 +175,7 @@ export function Hero() {
               </span>
             </Link>
             
-            <Link href="/resume.pdf" target="_blank" className="group relative inline-flex h-12 sm:h-14 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-white/[0.03] backdrop-blur-md px-8 font-semibold text-slate-200 transition-all hover:border-white/30 hover:bg-white/[0.08] hover:text-white hover:scale-105 active:scale-95">
+            <Link href="/HariniDasari_Resume.pdf" target="_blank" className="group relative inline-flex h-12 sm:h-14 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-white/[0.03] backdrop-blur-md px-8 font-semibold text-slate-200 transition-all hover:border-white/30 hover:bg-white/[0.08] hover:text-white hover:scale-105 active:scale-95">
               <span className="relative flex items-center gap-2">
                 <Download className="h-4 w-4 transition-transform group-hover:-translate-y-1" /> Download Resume
               </span>

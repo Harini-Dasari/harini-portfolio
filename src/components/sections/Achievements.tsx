@@ -47,7 +47,7 @@ export function Achievements() {
   };
 
   return (
-    <section id="achievements" className="py-24 md:py-32 relative overflow-hidden bg-background">
+    <section id="achievements" className="pt-24 md:pt-32 pb-10 md:pb-16 relative overflow-hidden bg-background">
       {/* Background ambient glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-purple-600/5 rounded-full blur-[150px] pointer-events-none"></div>
 

@@ -16,7 +16,6 @@ const NAV_ITEMS = [
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Achievements", href: "#achievements" },
-  { name: "Research", href: "#research" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -47,9 +46,8 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
-        <Link href="#home" onClick={(e) => handleScroll(e, "#home")} className="text-xl font-bold tracking-tighter text-primary">
+        <Link href="#home" onClick={(e) => handleScroll(e, "#home")} className="text-xl font-bold tracking-tighter text-foreground">
           {portfolioData.personal.name.split(" ")[0]}
-          <span className="text-foreground">.dev</span>
         </Link>
 
         {/* Desktop Nav */}
