@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 import { Mail, ArrowRight, Download, Cpu } from "lucide-react";
 import { FaGithub as Github, FaLinkedin as Linkedin } from "react-icons/fa";
 import Link from "next/link";
@@ -9,8 +9,13 @@ import { portfolioData } from "@/data/portfolio";
 import BlurText from "@/components/ui/BlurText";
 
 export function Hero() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isMounted, setIsMounted] = useState(false);
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  const springConfig = { damping: 25, stiffness: 150 };
+  const smoothX = useSpring(mouseX, springConfig);
+  const smoothY = useSpring(mouseY, springConfig);
 
   useEffect(() => {
     setIsMounted(true);
@@ -18,10 +23,8 @@ export function Hero() {
 
   const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
-    setMousePosition({
-      x: e.clientX - rect.left,
-      y: e.clientY - rect.top,
-    });
+    mouseX.set(e.clientX - rect.left - 300);
+    mouseY.set(e.clientY - rect.top - 300);
   };
 
   const containerVariants = {
@@ -73,10 +76,10 @@ export function Hero() {
         {/* Mouse Follow Glow */}
         {isMounted && (
           <motion.div
-            className="absolute w-[600px] h-[600px] rounded-full blur-[120px] bg-primary/10 transition-transform duration-700 ease-out"
-            animate={{
-              x: mousePosition.x - 300,
-              y: mousePosition.y - 300,
+            className="absolute w-[600px] h-[600px] rounded-full blur-[120px] bg-primary/10 pointer-events-none"
+            style={{
+              x: smoothX,
+              y: smoothY,
             }}
           />
         )}

@@ -1,28 +1,22 @@
-"use client";
-
-import { motion, useScroll } from "framer-motion";
+import dynamic from "next/dynamic";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
-import { About } from "@/components/sections/About";
-import { Education } from "@/components/sections/Education";
-import { Skills } from "@/components/sections/Skills";
-import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
-import { Achievements } from "@/components/sections/Achievements";
-import { Contact } from "@/components/sections/Contact";
+import { ScrollProgress } from "@/components/layout/ScrollProgress";
+
+const About = dynamic(() => import("@/components/sections/About").then((mod) => mod.About));
+const Education = dynamic(() => import("@/components/sections/Education").then((mod) => mod.Education));
+const Skills = dynamic(() => import("@/components/sections/Skills").then((mod) => mod.Skills));
+const FeaturedProjects = dynamic(() => import("@/components/sections/FeaturedProjects").then((mod) => mod.FeaturedProjects));
+const Achievements = dynamic(() => import("@/components/sections/Achievements").then((mod) => mod.Achievements));
+const Contact = dynamic(() => import("@/components/sections/Contact").then((mod) => mod.Contact));
 
 export default function Home() {
-  const { scrollYProgress } = useScroll();
-
   return (
     <>
       <Navbar />
       
-      {/* Scroll Progress Bar */}
-      <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-primary origin-left z-[100]"
-        style={{ scaleX: scrollYProgress }}
-      />
+      <ScrollProgress />
 
       <main className="flex-1 flex flex-col w-full overflow-hidden">
         <Hero />
