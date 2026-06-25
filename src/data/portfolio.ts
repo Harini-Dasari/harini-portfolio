@@ -102,7 +102,7 @@ export const portfolioData = {
       ],
       impact: "Improves travel safety and decision-making.",
       technologies: ["Machine Learning", "Python", "Maps API", "React"],
-      github: "https://github.com/Harini-Dasari/Safe-Yathra",
+      github: "#",
       live: "#"
     },
     {
