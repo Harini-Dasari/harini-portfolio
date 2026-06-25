@@ -81,28 +81,31 @@ export function Navbar() {
               </SheetTitle>
               <nav className="flex flex-col gap-3 flex-1 mt-2 overflow-y-auto pb-4 pr-1">
                 {NAV_ITEMS.map((item) => (
-                  <SheetClose asChild key={item.name}>
-                    <Link
-                      href={item.href}
-                      onClick={(e) => handleScroll(e, item.href)}
-                      className="flex items-center justify-center w-full py-3.5 rounded-2xl bg-white/[0.02] border border-white/[0.05] text-lg font-semibold text-slate-300 hover:bg-white/[0.08] hover:text-white hover:border-white/10 transition-all active:scale-[0.98]"
-                    >
-                      {item.name}
-                    </Link>
+                  <SheetClose 
+                    key={item.name}
+                    render={
+                      <Link
+                        href={item.href}
+                        onClick={(e) => handleScroll(e, item.href)}
+                        className="flex items-center justify-center w-full py-3.5 rounded-2xl bg-white/[0.02] border border-white/[0.05] text-lg font-semibold text-slate-300 hover:bg-white/[0.08] hover:text-white hover:border-white/10 transition-all active:scale-[0.98]"
+                      />
+                    }
+                  >
+                    {item.name}
                   </SheetClose>
                 ))}
               </nav>
               <div className="mt-auto pt-8 flex flex-col gap-5">
                 <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
                 <p className="text-sm text-slate-400 font-light">Ready to build something impactful?</p>
-                <SheetClose asChild>
+                <SheetClose render={
                   <Link 
                     href="#contact" 
                     onClick={(e) => handleScroll(e, "#contact")} 
                     className={cn(buttonVariants({ size: "lg" }), "w-full bg-gradient-to-r from-[#7C5CFF] to-[#38BDF8] text-white font-semibold border-none hover:opacity-90 rounded-full shadow-[0_0_20px_rgba(124,92,255,0.3)]")}
-                  >
-                    Let's Connect
-                  </Link>
+                  />
+                }>
+                  Let's Connect
                 </SheetClose>
               </div>
             </SheetContent>
