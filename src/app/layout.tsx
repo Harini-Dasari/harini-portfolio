@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Harini Dasari | Full-Stack Developer & AI Engineer",
+  title: "Harini Dasari | Full-Stack Developer & AI/ML Engineer",
   description: "Building intelligent applications that combine modern web technologies with AI-powered solutions.",
 };
 

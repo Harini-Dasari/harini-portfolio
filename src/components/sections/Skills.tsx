@@ -10,36 +10,44 @@ export function Skills() {
 
   const skills = [
     {
-      title: "Web Dev",
-      fullTitle: "Web Development",
-      desc: "Building modern, scalable web applications.",
-      techs: ["MongoDB", "Express.js", "React.js", "Node.js"],
+      title: "Languages",
+      fullTitle: "Programming Languages",
+      desc: "Core languages for software development and algorithms.",
+      techs: ["C", "Python", "Java", "JavaScript"],
       color: "from-[#38BDF8]/40 to-[#38BDF8]/5", 
       border: "border-[#38BDF8]/30",
     },
     {
       title: "AI & ML",
-      fullTitle: "Machine Learning",
+      fullTitle: "Machine Learning & Deep Learning",
       desc: "Developing intelligent systems and predictive models.",
-      techs: ["Python", "TensorFlow", "Scikit-learn", "CNNs"],
+      techs: ["Supervised Learning", "Unsupervised Learning", "Feature Engineering", "Model Evaluation", "Neural Networks", "CNNs", "Diffusion Models", "Image Segmentation", "Hyperparameter Tuning", "Regularization"],
       color: "from-[#7C5CFF]/40 to-[#7C5CFF]/5",
       border: "border-[#7C5CFF]/30",
     },
     {
-      title: "Data Sci",
-      fullTitle: "Data Science",
-      desc: "Analyzing data and building robust pipelines.",
-      techs: ["Pandas", "NumPy", "Matplotlib", "Seaborn"],
+      title: "Web Dev",
+      fullTitle: "Web Development",
+      desc: "Building modern, scalable web applications.",
+      techs: ["HTML", "CSS", "React.js", "Node.js", "Express.js"],
       color: "from-indigo-400/40 to-indigo-400/5",
       border: "border-indigo-400/30",
+    },
+    {
+      title: "Databases",
+      fullTitle: "Databases",
+      desc: "Storing and managing application data securely.",
+      techs: ["MySQL", "MongoDB"],
+      color: "from-blue-400/40 to-blue-400/5",
+      border: "border-blue-400/30",
     },
     {
       title: "Dev Tools",
       fullTitle: "Tools & Platforms",
       desc: "Ensuring efficient development workflows.",
-      techs: ["Git & GitHub", "Jupyter", "Vercel", "Render"],
-      color: "from-blue-400/40 to-blue-400/5",
-      border: "border-blue-400/30",
+      techs: ["Git", "GitHub", "VS Code", "Jupyter Notebook", "Vercel", "Render"],
+      color: "from-emerald-400/40 to-emerald-400/5",
+      border: "border-emerald-400/30",
     }
   ];
 

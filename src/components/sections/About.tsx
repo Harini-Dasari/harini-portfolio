@@ -38,7 +38,7 @@ export function About() {
             transition={{ delay: 0.1 }}
             className="text-sm md:text-base font-medium tracking-wide text-slate-400 uppercase"
           >
-            Computer Science Student • Full-Stack Developer • AI Engineer
+            Final Year Computer Science Student • Full-Stack Developer • AI/ML Engineer
           </motion.p>
         </div>
 
@@ -93,21 +93,20 @@ export function About() {
                     Engineering intelligent digital solutions <br className="hidden md:block" /> for real-world impact.
                   </h3>
 
-                  <div className="flex flex-col gap-4 mt-4 text-sm md:text-base text-slate-300 font-light leading-relaxed max-w-3xl text-center">
+                  <div className="flex flex-col gap-4 mt-4 text-sm md:text-base text-slate-300 font-light leading-relaxed max-w-3xl text-justify">
                     <p>
-                      I am a Computer Science student at RGUKT RK Valley, passionate about turning ideas into products that help people. I specialize in building web applications and AI-driven systems, with a strong focus on healthcare and social impact.
+                      I am a final year CSE student at RGUKT RK Valley, passionate about turning ideas into products that help people. I specialize in building web applications and AI-driven systems, with a strong focus on healthcare and social impact.
                     </p>
                     <p>
                       From smart monitoring tools to scalable software, my goal is to create technology that makes a real difference.
                     </p>
                   </div>
                   
-                  {/* 4 Feature Cards */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full mt-4">
+                  {/* 3 Feature Cards */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full mt-4">
                     {[
                       { title: "Full-Stack Development", desc: "Building modern web and mobile applications." },
-                      { title: "AI Engineering", desc: "Applying Machine Learning and Deep Learning to solve real-world problems." },
-                      { title: "Healthcare Innovation", desc: "Developing AI-powered healthcare solutions for impact-driven applications." },
+                      { title: "AI/ML Engineer", desc: "Applying Machine Learning and Deep Learning to solve real-world problems." },
                       { title: "Research & Learning", desc: "Exploring Computer Vision, NLP, and emerging technologies." }
                     ].map((card, i) => (
                       <div key={i} className="flex flex-col items-center text-center p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:bg-white/[0.04] hover:-translate-y-1 transition-all duration-300 gap-3">
@@ -133,10 +132,10 @@ export function About() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 w-full max-w-4xl">
                     {[
-                      { title: "LifeBand Maa", desc: "AI Maternal Health Monitoring" },
+                      { title: "Safe Yathra", desc: "Route Safety Analysis" },
                       { title: "Praja FIR", desc: "Voice-Based FIR System" },
-                      { title: "AI Rural Health", desc: "Risk Prediction Platform" },
-                      { title: "Safe Yathra", desc: "Route Safety Analysis" }
+                      { title: "Symptom Scan AI", desc: "Risk Prediction Platform" },
+                      { title: "LifeBand Maa", desc: "AI Maternal Health Monitoring" }
                     ].map((project, i) => (
                       <div key={i} className="flex flex-col items-start text-left p-6 md:p-8 rounded-[24px] bg-gradient-to-br from-white/[0.03] to-transparent border border-white/5 hover:border-white/10 hover:bg-white/[0.05] transition-all duration-300 shadow-lg">
                         <h4 className="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-300 mb-2">{project.title}</h4>
@@ -164,8 +163,8 @@ export function About() {
                       "Technology should <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#7C5CFF] to-[#38BDF8]">simplify lives</span>, solve meaningful problems, and create impact at scale."
                     </h3>
                   </div>
-                  <p className="text-base md:text-lg text-slate-400 max-w-2xl font-light leading-relaxed">
-                    I believe great products emerge when strong engineering, thoughtful design, and real-world needs come together.
+                  <p className="text-base md:text-lg text-slate-400 max-w-2xl font-light leading-relaxed text-center">
+                    I build useful products by combining strong technology with designs that are easy for anyone to use.
                   </p>
                 </motion.div>
               )}

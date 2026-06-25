@@ -188,13 +188,7 @@ export function Hero() {
             </Link>
           </motion.div>
 
-          {/* Social Text */}
-          <motion.div variants={itemVariants} className="flex items-center gap-4 opacity-60">
-            <div className="h-[1px] w-8 bg-gradient-to-r from-transparent to-white/50"></div>
-            <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase text-white">
-              Open To Collaboration Worldwide
-            </p>
-          </motion.div>
+
         </motion.div>
 
         {/* RIGHT SECTION - Orbit System */}

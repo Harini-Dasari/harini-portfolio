@@ -1,7 +1,7 @@
 export const portfolioData = {
   personal: {
     name: "Harini Dasari",
-    role: "Full-Stack Developer | AI Engineer",
+    role: "Full-Stack Developer | AI/ML Engineer",
     headline: "Building intelligent applications that combine modern web technologies with AI-powered solutions for healthcare, public safety, and social impact.",
     email: "dasariharini17@gmail.com",
     phone: "+91 8639762217",
@@ -10,7 +10,7 @@ export const portfolioData = {
   },
   about: {
     paragraphs: [
-      "I am a Full-Stack Developer and AI Engineer passionate about building technology that solves real-world problems.",
+      "I am a Full-Stack Developer and AI/ML Engineer passionate about building technology that solves real-world problems.",
       "My work combines web development, Artificial Intelligence, Machine Learning, Deep Learning, Computer Vision, and Natural Language Processing to create impactful products.",
       "I enjoy transforming ideas into complete applications—from designing user experiences and building scalable systems to integrating intelligent AI solutions that provide meaningful insights.",
       "Through projects in healthcare, public safety, and social impact, I focus on building solutions that are technically strong, user-focused, and capable of improving lives.",
@@ -21,7 +21,7 @@ export const portfolioData = {
     {
       institution: "Rajiv Gandhi University of Knowledge Technologies (RGUKT), RK Valley",
       degree: "Bachelor of Technology in Computer Science and Engineering",
-      duration: "2023 – Present",
+      duration: "2023 – Present (Expected 2027)",
       gpa: "8.8 / 10"
     },
     {
@@ -32,24 +32,11 @@ export const portfolioData = {
     }
   ],
   skills: {
-    "Programming Languages": ["Python", "Java", "JavaScript", "C"],
-    "Frontend Development": ["React.js", "Next.js", "HTML", "CSS", "Tailwind CSS"],
-    "Backend Development": ["Node.js", "Express.js"],
-    "Databases & Cloud": ["MongoDB", "MySQL", "Firebase", "Vercel", "Render"],
-    "AI & Machine Learning": [
-      "Machine Learning",
-      "Deep Learning",
-      "Neural Networks",
-      "CNNs",
-      "TensorFlow",
-      "Scikit-Learn",
-      "Feature Engineering",
-      "Model Evaluation",
-      "Hyperparameter Tuning",
-      "Regularization"
-    ],
-    "Libraries": ["NumPy", "Pandas", "Matplotlib", "Seaborn"],
-    "Tools & Platforms": ["Git", "GitHub", "VS Code", "Jupyter Notebook"]
+    "Programming Languages": ["C", "Python", "Java", "JavaScript"],
+    "Machine Learning & Deep Learning": ["Supervised Learning", "Unsupervised Learning", "Feature Engineering", "Model Evaluation", "Neural Networks", "CNNs", "Diffusion Models", "Image Segmentation", "Hyperparameter Tuning", "Regularization"],
+    "Web Development": ["HTML", "CSS", "React.js", "Node.js", "Express.js"],
+    "Databases": ["MySQL", "MongoDB"],
+    "Tools & Platforms": ["Git", "GitHub", "VS Code", "Jupyter Notebook", "Vercel", "Render"]
   },
   projects: [
     {
@@ -70,7 +57,7 @@ export const portfolioData = {
       live: "#"
     },
     {
-      title: "AI for Rural Health",
+      title: "Symptom Scan AI",
       subtitle: "Healthcare Risk Prediction Platform",
       description: "An intelligent platform designed to bridge the healthcare gap in rural communities by connecting patients with doctors through ASHA workers. It analyzes symptoms to predict health severity and recommends the best course of action, from self-care to hospital visits.",
       features: [
@@ -82,7 +69,7 @@ export const portfolioData = {
       ],
       impact: "Improves healthcare accessibility for underserved communities.",
       technologies: ["Next.js", "Machine Learning", "Python", "Tailwind CSS"],
-      github: "https://github.com/Harini-Dasari/AI-for-Rural-Health",
+      github: "https://github.com/Jayasimha-2005/AI-for-rural",
       live: "https://ai-for-rural.vercel.app/"
     },
     {
@@ -98,8 +85,8 @@ export const portfolioData = {
       ],
       impact: "Makes complaint registration easier, faster, and more accessible.",
       technologies: ["React", "NLP", "Speech Recognition", "Node.js"],
-      github: "https://github.com/Harini-Dasari/Praja-FIR",
-      live: "https://prajafirfrontend.vercel.app/"
+      github: "https://github.com/Jayasimha-2005/robot-ai-fir-2.0",
+      live: "https://ap-police-fir.web.app/"
     },
     {
       title: "Safe Yathra",
