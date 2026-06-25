@@ -132,10 +132,12 @@ export function About() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 w-full max-w-4xl">
                     {[
+                      { title: "Village Governance Platform", desc: "Smart Digital Governance System" },
                       { title: "Safe Yathra", desc: "Route Safety Analysis" },
                       { title: "Praja FIR", desc: "Voice-Based FIR System" },
                       { title: "Symptom Scan AI", desc: "Risk Prediction Platform" },
-                      { title: "LifeBand Maa", desc: "AI Maternal Health Monitoring" }
+                      { title: "LifeBand Maa", desc: "AI Maternal Health Monitoring" },
+                      { title: "Project-S", desc: "Smart Academic Companion" }
                     ].map((project, i) => (
                       <div key={i} className="flex flex-col items-start text-left p-6 md:p-8 rounded-[24px] bg-gradient-to-br from-white/[0.03] to-transparent border border-white/5 hover:border-white/10 hover:bg-white/[0.05] transition-all duration-300 shadow-lg">
                         <h4 className="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-300 mb-2">{project.title}</h4>

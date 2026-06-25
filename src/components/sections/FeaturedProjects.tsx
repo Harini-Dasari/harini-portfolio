@@ -75,7 +75,9 @@ export function FeaturedProjects() {
                 </CardContent>
 
                 <CardFooter className="pt-6 pb-8 px-6 md:px-8 border-t border-border/10 gap-4 mt-auto z-10">
-                  {project.github !== "#" && (
+                  {project.github === "private" ? (
+                    <ProjectCodeButton />
+                  ) : project.github !== "#" && (
                     <Link href={project.github} target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline" }), "flex-1 gap-2 bg-background/50 border-border/50 hover:bg-background transition-all duration-300 py-6 text-base")}>
                       <Github className="w-5 h-5" />
                       Code
@@ -94,6 +96,35 @@ export function FeaturedProjects() {
         </motion.div>
       </div>
     </section>
+  );
+}
+
+function ProjectCodeButton() {
+  const [clicked, setClicked] = useState(false);
+
+  useEffect(() => {
+    let timer: NodeJS.Timeout;
+    if (clicked) {
+      timer = setTimeout(() => {
+        setClicked(false);
+      }, 2000);
+    }
+    return () => clearTimeout(timer);
+  }, [clicked]);
+
+  return (
+    <button
+      onClick={() => setClicked(true)}
+      className={cn(
+        buttonVariants({ variant: "outline" }),
+        "flex-1 gap-2 bg-background/50 border-border/50 transition-all duration-300 py-6 text-base",
+        clicked ? "opacity-70 cursor-not-allowed hover:bg-background/50" : "hover:bg-background cursor-pointer"
+      )}
+      disabled={clicked}
+    >
+      {clicked ? <Lock className="w-5 h-5" /> : <Github className="w-5 h-5" />}
+      {clicked ? "Private Repo" : "Code"}
+    </button>
   );
 }
 

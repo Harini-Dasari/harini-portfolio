@@ -40,53 +40,20 @@ export const portfolioData = {
   },
   projects: [
     {
-      title: "LifeBand Maa",
-      subtitle: "AI-Based Maternal Health Monitoring System",
-      description: "A wearable AI solution that keeps pregnant women safe by continuously monitoring vital signs like blood pressure and ECG. It uses anomaly detection to instantly alert doctors and families to potential health risks through a remote live dashboard.",
+      title: "Village Governance Platform",
+      subtitle: "Smart Digital Governance System",
+      description: "A full-stack digital governance platform designed to connect citizens, volunteers, officials, and administrators in one system. It streamlines complaint management, document requests, scheme access, budget transparency, and citizen feedback to improve governance in villages.",
       features: [
-        "BP Monitoring",
-        "ECG Monitoring",
-        "Temperature Monitoring",
-        "Anomaly Detection",
-        "Emergency Alerts",
-        "Remote Healthcare Dashboard"
+        "Complaint Management",
+        "Document Requests",
+        "Scheme Access",
+        "Budget Transparency",
+        "Citizen Feedback"
       ],
-      impact: "Supports early risk detection and timely intervention in maternal healthcare.",
-      technologies: ["React", "Python", "Machine Learning", "IoT"],
-      github: "https://github.com/Harini-Dasari/LifeBand-Maa",
+      impact: "Improves governance and transparency in villages.",
+      technologies: ["Next.js", "React", "Node.js", "Full-Stack"],
+      github: "https://github.com/Harini-Dasari/Governance-for-villages/",
       live: "#"
-    },
-    {
-      title: "Symptom Scan AI",
-      subtitle: "Healthcare Risk Prediction Platform",
-      description: "An intelligent platform designed to bridge the healthcare gap in rural communities by connecting patients with doctors through ASHA workers. It analyzes symptoms to predict health severity and recommends the best course of action, from self-care to hospital visits.",
-      features: [
-        "Symptom Analysis",
-        "Risk Prediction",
-        "Recommendation Engine",
-        "Doctor Consultation Suggestions",
-        "Rural Healthcare Support"
-      ],
-      impact: "Improves healthcare accessibility for underserved communities.",
-      technologies: ["Next.js", "Machine Learning", "Python", "Tailwind CSS"],
-      github: "https://github.com/Jayasimha-2005/AI-for-rural",
-      live: "https://ai-for-rural.vercel.app/"
-    },
-    {
-      title: "Praja FIR",
-      subtitle: "Voice-Based Digital FIR Filing System",
-      description: "A multilingual AI platform that revolutionizes how police complaints are filed by allowing users to submit FIRs simply using their voice. It uses speech recognition and NLP to convert spoken words in native languages into structured, translated digital documents for seamless verification and sharing across states.",
-      features: [
-        "Speech Recognition",
-        "NLP Processing",
-        "Multilingual Support",
-        "FIR Generation",
-        "Translation Support"
-      ],
-      impact: "Makes complaint registration easier, faster, and more accessible.",
-      technologies: ["React", "NLP", "Speech Recognition", "Node.js"],
-      github: "https://github.com/Jayasimha-2005/robot-ai-fir-2.0",
-      live: "https://ap-police-fir.web.app/"
     },
     {
       title: "Safe Yathra",
@@ -106,20 +73,68 @@ export const portfolioData = {
       live: "#"
     },
     {
-      title: "Village Governance Platform",
-      subtitle: "Smart Digital Governance System",
-      description: "A full-stack digital governance platform designed to connect citizens, volunteers, officials, and administrators in one system. It streamlines complaint management, document requests, scheme access, budget transparency, and citizen feedback to improve governance in villages.",
+      title: "Praja FIR",
+      subtitle: "Voice-Based Digital FIR Filing System",
+      description: "A multilingual AI platform that revolutionizes how police complaints are filed by allowing users to submit FIRs simply using their voice. It uses speech recognition and NLP to convert spoken words in native languages into structured, translated digital documents for seamless verification and sharing across states.",
       features: [
-        "Complaint Management",
-        "Document Requests",
-        "Scheme Access",
-        "Budget Transparency",
-        "Citizen Feedback"
+        "Speech Recognition",
+        "NLP Processing",
+        "Multilingual Support",
+        "FIR Generation",
+        "Translation Support"
       ],
-      impact: "Improves governance and transparency in villages.",
-      technologies: ["Next.js", "React", "Node.js", "Full-Stack"],
-      github: "https://github.com/Harini-Dasari/Village-Governance-Platform",
+      impact: "Makes complaint registration easier, faster, and more accessible.",
+      technologies: ["React", "NLP", "Speech Recognition", "Node.js"],
+      github: "https://github.com/Jayasimha-2005/robot-ai-fir-2.0",
+      live: "https://ap-police-fir.web.app/"
+    },
+    {
+      title: "Symptom Scan AI",
+      subtitle: "Healthcare Risk Prediction Platform",
+      description: "An intelligent platform designed to bridge the healthcare gap in rural communities by connecting patients with doctors through ASHA workers. It analyzes symptoms to predict health severity and recommends the best course of action, from self-care to hospital visits.",
+      features: [
+        "Symptom Analysis",
+        "Risk Prediction",
+        "Recommendation Engine",
+        "Doctor Consultation Suggestions",
+        "Rural Healthcare Support"
+      ],
+      impact: "Improves healthcare accessibility for underserved communities.",
+      technologies: ["Next.js", "Machine Learning", "Python", "Tailwind CSS"],
+      github: "https://github.com/Jayasimha-2005/AI-for-rural",
+      live: "https://ai-for-rural.vercel.app/"
+    },
+    {
+      title: "LifeBand Maa",
+      subtitle: "AI-Based Maternal Health Monitoring System",
+      description: "A wearable AI solution that keeps pregnant women safe by continuously monitoring vital signs like blood pressure and ECG. It uses anomaly detection to instantly alert doctors and families to potential health risks through a remote live dashboard.",
+      features: [
+        "BP Monitoring",
+        "ECG Monitoring",
+        "Temperature Monitoring",
+        "Anomaly Detection",
+        "Emergency Alerts",
+        "Remote Healthcare Dashboard"
+      ],
+      impact: "Supports early risk detection and timely intervention in maternal healthcare.",
+      technologies: ["React", "Python", "Machine Learning", "IoT"],
+      github: "private",
       live: "#"
+    },
+    {
+      title: "Project-S (SmartStudy)",
+      subtitle: "Smart Academic Companion for Students 🎓",
+      description: "Project-S (SmartStudy) is a web-based productivity platform designed to help students manage their academic life efficiently while encouraging consistent learning and personal growth. It brings together essential academic tools into one simple, distraction-free interface — making studying more organized, engaging, and effective.",
+      features: [
+        "Academic Management",
+        "Productivity Tracking",
+        "Distraction-free Interface",
+        "Learning Optimization"
+      ],
+      impact: "Helps students manage their academic life efficiently and encourages consistent learning.",
+      technologies: ["React", "Node.js", "Web Development"],
+      github: "https://github.com/Jayasimha-2005/Project_S",
+      live: "https://jayasimha-2005.github.io/Project_S/"
     }
   ],
   achievements: [
@@ -136,21 +151,15 @@ export const portfolioData = {
       year: "2026"
     },
     {
+      icon: "🏅",
+      title: "Aadhya Hackathon Winner",
+      description: "Won First Prize for Symptom Scan AI.",
+      year: "2026"
+    },
+    {
       icon: "🚀",
       title: "PitchTank Showcase",
       description: "Presented LifeBand Maa.",
-      year: "2026"
-    },
-    {
-      icon: "⭐",
-      title: "Blueprint 6.0",
-      description: "Showcased healthcare innovation.",
-      year: "2026"
-    },
-    {
-      icon: "🏅",
-      title: "Techzite 2.0 Winner",
-      description: "Recognized for AI-based solutions.",
       year: "2026"
     },
     {
