@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolio";
 import { useRef, useEffect, useState } from "react";
+import { MoveHorizontal } from "lucide-react";
 
 export function Achievements() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -57,7 +58,7 @@ export function Achievements() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col items-center justify-center space-y-4 text-center mb-16"
+          className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
         >
           <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-foreground">
             Achievements & Recognition
@@ -65,6 +66,10 @@ export function Achievements() {
           <p className="text-muted-foreground md:text-lg max-w-[600px]">
             Key milestones from my academic, technical, and innovation journey.
           </p>
+          <div className="flex items-center gap-2 text-slate-200 bg-primary/10 border border-primary/20 px-4 py-2 rounded-full backdrop-blur-md mt-4">
+            <MoveHorizontal className="w-4 h-4 animate-pulse text-primary" />
+            <span className="text-xs md:text-sm font-medium tracking-wide text-primary">Scroll or drag to see</span>
+          </div>
         </motion.div>
 
         {/* Timeline Container */}
@@ -114,9 +119,6 @@ export function Achievements() {
                   <div className="relative flex-1 p-6 sm:p-8 rounded-2xl bg-card/40 backdrop-blur-md border border-border/50 group-hover:border-primary/50 transition-all duration-300 flex flex-col items-center text-center gap-4 shadow-xl">
                      
                      <div className="space-y-1.5 w-full mt-2">
-                       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold tracking-wider bg-primary/10 text-primary uppercase border border-primary/20 mb-2">
-                         {achievement.year}
-                       </span>
                        <h3 className="text-lg font-bold text-foreground leading-tight">
                          {achievement.title}
                        </h3>

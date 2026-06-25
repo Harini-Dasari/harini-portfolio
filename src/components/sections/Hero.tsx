@@ -142,7 +142,7 @@ export function Hero() {
 
           {/* Heading */}
           <motion.div variants={itemVariants} className="relative mb-6 w-full flex justify-center lg:justify-start">
-            <div className="text-[3.5rem] sm:text-[5rem] lg:text-[5.5rem] leading-[1.05] font-extrabold tracking-[-0.04em] text-white">
+            <div className="text-5xl sm:text-[5rem] lg:text-[5.5rem] leading-[1.05] font-extrabold tracking-[-0.04em] text-white">
               <BlurText
                 text="Harini Dasari"
                 delay={50}
@@ -201,7 +201,7 @@ export function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         >
-          <div className="relative w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] lg:w-[450px] lg:h-[450px] flex items-center justify-center">
+          <div className="relative w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] lg:w-[450px] lg:h-[450px] flex items-center justify-center">
             
             {/* Outer Rotating Ring */}
             <div 
