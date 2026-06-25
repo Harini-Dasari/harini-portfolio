@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolio";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 import { FaGithub as Github, FaLinkedin as Linkedin } from "react-icons/fa";
 import Link from "next/link";
 
@@ -15,12 +15,7 @@ export function Contact() {
       value: portfolioData.personal.email,
       href: `mailto:${portfolioData.personal.email}`,
     },
-    {
-      icon: Phone,
-      label: "Call Me",
-      value: portfolioData.personal.phone,
-      href: `tel:${portfolioData.personal.phone.replace(/\s+/g, '')}`,
-    },
+
     {
       icon: Github,
       label: "GitHub",

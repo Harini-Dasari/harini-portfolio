@@ -66,7 +66,7 @@ export const portfolioData = {
       ],
       impact: "Supports early risk detection and timely intervention in maternal healthcare.",
       technologies: ["React", "Python", "Machine Learning", "IoT"],
-      github: "https://github.com/Harini-Dasari", // Placeholder, link to specific repo later
+      github: "https://github.com/Harini-Dasari/LifeBand-Maa",
       live: "#"
     },
     {
@@ -82,7 +82,7 @@ export const portfolioData = {
       ],
       impact: "Improves healthcare accessibility for underserved communities.",
       technologies: ["Next.js", "Machine Learning", "Python", "Tailwind CSS"],
-      github: "https://github.com/Harini-Dasari",
+      github: "https://github.com/Harini-Dasari/AI-for-Rural-Health",
       live: "https://ai-for-rural.vercel.app/"
     },
     {
@@ -98,7 +98,7 @@ export const portfolioData = {
       ],
       impact: "Makes complaint registration easier, faster, and more accessible.",
       technologies: ["React", "NLP", "Speech Recognition", "Node.js"],
-      github: "https://github.com/Harini-Dasari",
+      github: "https://github.com/Harini-Dasari/Praja-FIR",
       live: "https://prajafirfrontend.vercel.app/"
     },
     {
@@ -115,7 +115,23 @@ export const portfolioData = {
       ],
       impact: "Improves travel safety and decision-making.",
       technologies: ["Machine Learning", "Python", "Maps API", "React"],
-      github: "https://github.com/Harini-Dasari",
+      github: "https://github.com/Harini-Dasari/Safe-Yathra",
+      live: "#"
+    },
+    {
+      title: "Village Governance Platform",
+      subtitle: "Smart Digital Governance System",
+      description: "A full-stack digital governance platform designed to connect citizens, volunteers, officials, and administrators in one system. It streamlines complaint management, document requests, scheme access, budget transparency, and citizen feedback to improve governance in villages.",
+      features: [
+        "Complaint Management",
+        "Document Requests",
+        "Scheme Access",
+        "Budget Transparency",
+        "Citizen Feedback"
+      ],
+      impact: "Improves governance and transparency in villages.",
+      technologies: ["Next.js", "React", "Node.js", "Full-Stack"],
+      github: "https://github.com/Harini-Dasari/Village-Governance-Platform",
       live: "#"
     }
   ],

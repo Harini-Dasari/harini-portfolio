@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, ArrowRight, Download, Cpu } from "lucide-react";
+import { Mail, ArrowRight, Download, Cpu } from "lucide-react";
 import { FaGithub as Github, FaLinkedin as Linkedin } from "react-icons/fa";
 import Link from "next/link";
 import { portfolioData } from "@/data/portfolio";
@@ -43,9 +43,8 @@ export function Hero() {
   // Icons array with angles for positioning
   const orbitIcons = [
     { icon: Github, href: portfolioData.personal.github, label: "GitHub", angle: 270, color: "#ffffff" },
-    { icon: Linkedin, href: portfolioData.personal.linkedin, label: "LinkedIn", angle: 0, color: "#38BDF8" },
-    { icon: Mail, href: `mailto:${portfolioData.personal.email}`, label: "Email", angle: 90, color: "#F43F5E" },
-    { icon: Phone, href: `tel:${portfolioData.personal.phone.replace(/\s+/g, '')}`, label: "Phone", angle: 180, color: "#10B981" },
+    { icon: Linkedin, href: portfolioData.personal.linkedin, label: "LinkedIn", angle: 30, color: "#38BDF8" },
+    { icon: Mail, href: `mailto:${portfolioData.personal.email}`, label: "Email", angle: 150, color: "#F43F5E" },
   ];
 
   return (
