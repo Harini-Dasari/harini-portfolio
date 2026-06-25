@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetClose } from "@/components/ui/sheet";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { portfolioData } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
@@ -21,7 +21,6 @@ const NAV_ITEMS = [
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false);
-  const [isOpen, setIsOpen] = React.useState(false);
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -30,7 +29,6 @@ export function Navbar() {
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
     e.preventDefault();
-    setIsOpen(false);
     const targetId = href.replace("#", "");
     const elem = document.getElementById(targetId);
     if (elem) {
@@ -71,7 +69,7 @@ export function Navbar() {
 
         {/* Mobile Nav */}
         <div className="md:hidden">
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
+          <Sheet>
             <SheetTrigger className={cn(buttonVariants({ variant: "ghost", size: "icon" }), "text-foreground")}>
               <Menu className="h-6 w-6" />
               <span className="sr-only">Toggle Menu</span>
@@ -82,26 +80,29 @@ export function Navbar() {
               </SheetTitle>
               <nav className="flex flex-col gap-3 flex-1 mt-2 overflow-y-auto pb-4 pr-1">
                 {NAV_ITEMS.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    onClick={(e) => handleScroll(e, item.href)}
-                    className="flex items-center justify-center w-full py-3.5 rounded-2xl bg-white/[0.02] border border-white/[0.05] text-lg font-semibold text-slate-300 hover:bg-white/[0.08] hover:text-white hover:border-white/10 transition-all active:scale-[0.98]"
-                  >
-                    {item.name}
-                  </Link>
+                  <SheetClose asChild key={item.name}>
+                    <Link
+                      href={item.href}
+                      onClick={(e) => handleScroll(e, item.href)}
+                      className="flex items-center justify-center w-full py-3.5 rounded-2xl bg-white/[0.02] border border-white/[0.05] text-lg font-semibold text-slate-300 hover:bg-white/[0.08] hover:text-white hover:border-white/10 transition-all active:scale-[0.98]"
+                    >
+                      {item.name}
+                    </Link>
+                  </SheetClose>
                 ))}
               </nav>
               <div className="mt-auto pt-8 flex flex-col gap-5">
                 <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
                 <p className="text-sm text-slate-400 font-light">Ready to build something impactful?</p>
-                <Link 
-                  href="#contact" 
-                  onClick={(e) => handleScroll(e, "#contact")} 
-                  className={cn(buttonVariants({ size: "lg" }), "w-full bg-gradient-to-r from-[#7C5CFF] to-[#38BDF8] text-white font-semibold border-none hover:opacity-90 rounded-full shadow-[0_0_20px_rgba(124,92,255,0.3)]")}
-                >
-                  Let's Connect
-                </Link>
+                <SheetClose asChild>
+                  <Link 
+                    href="#contact" 
+                    onClick={(e) => handleScroll(e, "#contact")} 
+                    className={cn(buttonVariants({ size: "lg" }), "w-full bg-gradient-to-r from-[#7C5CFF] to-[#38BDF8] text-white font-semibold border-none hover:opacity-90 rounded-full shadow-[0_0_20px_rgba(124,92,255,0.3)]")}
+                  >
+                    Let's Connect
+                  </Link>
+                </SheetClose>
               </div>
             </SheetContent>
           </Sheet>
