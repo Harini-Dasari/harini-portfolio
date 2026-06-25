@@ -34,9 +34,8 @@ export function Education() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.6, delay: index * 0.2 }}
-                  className={`relative flex flex-col md:flex-row items-center ${
-                    isEven ? "md:flex-row-reverse" : ""
-                  }`}
+                  className={`relative flex flex-col md:flex-row items-center ${isEven ? "md:flex-row-reverse" : ""
+                    }`}
                 >
                   {/* Timeline Dot */}
                   <div className="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-primary flex items-center justify-center transform -translate-x-1/2 z-10 border-4 border-background">

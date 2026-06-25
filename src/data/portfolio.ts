@@ -17,6 +17,14 @@ export const portfolioData = {
       "I am currently pursuing a Bachelor of Technology in Computer Science and Engineering at RGUKT RK Valley."
     ]
   },
+  experience: [
+    {
+      title: "Deep Learning Research Intern",
+      company: "IIIT Sri City",
+      duration: "May 2026 – Present",
+      description: "Conducting research exploration in Deep Learning with a primary focus on image segmentation using diffusion models. Studying and analyzing recent research papers to understand diffusion-based architectures, segmentation methodologies, and emerging trends in computer vision. Building strong research foundations through literature review, technical analysis, and comparative study of state-of-the-art approaches."
+    }
+  ],
   education: [
     {
       institution: "Rajiv Gandhi University of Knowledge Technologies (RGUKT), RK Valley",

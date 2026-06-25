@@ -6,6 +6,7 @@ import { ScrollProgress } from "@/components/layout/ScrollProgress";
 
 const About = dynamic(() => import("@/components/sections/About").then((mod) => mod.About));
 const Education = dynamic(() => import("@/components/sections/Education").then((mod) => mod.Education));
+const Experience = dynamic(() => import("@/components/sections/Experience").then((mod) => mod.Experience));
 const Skills = dynamic(() => import("@/components/sections/Skills").then((mod) => mod.Skills));
 const FeaturedProjects = dynamic(() => import("@/components/sections/FeaturedProjects").then((mod) => mod.FeaturedProjects));
 const Achievements = dynamic(() => import("@/components/sections/Achievements").then((mod) => mod.Achievements));
@@ -22,6 +23,7 @@ export default function Home() {
         <Hero />
         <About />
         <Education />
+        <Experience />
         <Skills />
         <FeaturedProjects />
         <Achievements />
