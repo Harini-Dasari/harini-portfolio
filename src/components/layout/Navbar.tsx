@@ -21,6 +21,7 @@ const NAV_ITEMS = [
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -29,6 +30,7 @@ export function Navbar() {
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
     e.preventDefault();
+    setIsOpen(false);
     const targetId = href.replace("#", "");
     const elem = document.getElementById(targetId);
     if (elem) {
@@ -69,7 +71,7 @@ export function Navbar() {
 
         {/* Mobile Nav */}
         <div className="md:hidden">
-          <Sheet>
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger className={cn(buttonVariants({ variant: "ghost", size: "icon" }), "text-foreground")}>
               <Menu className="h-6 w-6" />
               <span className="sr-only">Toggle Menu</span>
