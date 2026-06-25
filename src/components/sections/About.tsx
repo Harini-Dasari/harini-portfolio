@@ -90,17 +90,16 @@ export function About() {
                   className="w-full flex flex-col items-center text-center gap-8"
                 >
                   <h3 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white leading-tight">
-                    Engineering <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7C5CFF] to-[#38BDF8]">intelligent digital solutions</span> <br className="hidden md:block" /> for real-world impact.
+                    Engineering intelligent digital solutions <br className="hidden md:block" /> for real-world impact.
                   </h3>
 
-                  <p className="text-sm md:text-base text-slate-300 max-w-3xl font-light leading-relaxed">
-                    I am a Computer Science and Engineering student at Rajiv Gandhi University of Knowledge Technologies (RGUKT RK Valley), passionate about building scalable applications and AI-powered solutions that solve meaningful real-world problems.
-                  </p>
-                  
-                  <div className="flex flex-col gap-4 text-sm md:text-base text-[#94A3B8] font-light leading-relaxed max-w-3xl text-center">
-                    <p>I enjoy transforming ideas into impactful products through modern web technologies, machine learning, and AI-driven systems.</p>
-                    <p>My experience includes building healthcare-focused platforms, intelligent monitoring systems, and real-time applications designed to create social impact.</p>
-                    <p>I am particularly interested in AI, Computer Vision, Deep Learning, and scalable software systems that bridge technology with practical human needs.</p>
+                  <div className="flex flex-col gap-4 mt-4 text-sm md:text-base text-slate-300 font-light leading-relaxed max-w-3xl text-center">
+                    <p>
+                      I am a Computer Science student at RGUKT RK Valley, passionate about turning ideas into products that help people. I specialize in building web applications and AI-driven systems, with a strong focus on healthcare and social impact.
+                    </p>
+                    <p>
+                      From smart monitoring tools to scalable software, my goal is to create technology that makes a real difference.
+                    </p>
                   </div>
                   
                   {/* 4 Feature Cards */}

@@ -137,7 +137,7 @@ export function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#38BDF8] opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#38BDF8]"></span>
             </span>
-            <span className="text-[13px] font-semibold tracking-wider text-slate-300 uppercase">AVAILABLE FOR OPPORTUNITIES</span>
+            <span className="text-[13px] font-semibold tracking-wider text-slate-300 uppercase">OPEN TO WORK</span>
           </motion.div>
 
           {/* Heading */}
@@ -157,12 +157,12 @@ export function Hero() {
           <motion.h2 variants={itemVariants} className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-6 tracking-tight flex items-center justify-center lg:justify-start gap-3 flex-wrap">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-slate-400">Full-Stack Developer</span>
             <span className="text-[#7C5CFF]/60 font-light">|</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-slate-400">AI Engineer</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-slate-400">AI/ML Engineer</span>
           </motion.h2>
 
           {/* Description */}
           <motion.p variants={itemVariants} className="text-base sm:text-lg text-slate-400 font-light leading-relaxed max-w-[600px] mb-10 lg:pr-10">
-            Building intelligent applications that combine modern web technologies with AI-powered solutions for healthcare, public safety, and social impact.
+            Developing scalable web applications and intelligent AI/ML models to solve complex problems in healthcare, public safety, and social impact.
           </motion.p>
 
           {/* Buttons */}
